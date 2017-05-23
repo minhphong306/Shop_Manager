@@ -13,5 +13,6 @@ namespace Shop_Manager {
         public Form1() {
             InitializeComponent();
         }
+        // test commit
     }
 }
