@@ -13,7 +13,7 @@ namespace Shop_Manager {
         static void Main() {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmGiaoDienChinh());
+            Application.Run(new Form1());
         }
     }
 }

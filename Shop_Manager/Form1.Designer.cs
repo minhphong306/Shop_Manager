@@ -23,58 +23,60 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.llbDangKy = new System.Windows.Forms.LinkLabel();
+            this.btnThoat = new System.Windows.Forms.Button();
+            this.btnDangNhap = new System.Windows.Forms.Button();
+            this.txtMatKhau = new System.Windows.Forms.TextBox();
+            this.txtTaiKhoan = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.lbStatus = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // linkLabel1
+            // llbDangKy
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(235, 243);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(132, 20);
-            this.linkLabel1.TabIndex = 15;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Đăng kí tài khoản";
+            this.llbDangKy.AutoSize = true;
+            this.llbDangKy.Location = new System.Drawing.Point(235, 243);
+            this.llbDangKy.Name = "llbDangKy";
+            this.llbDangKy.Size = new System.Drawing.Size(132, 20);
+            this.llbDangKy.TabIndex = 15;
+            this.llbDangKy.TabStop = true;
+            this.llbDangKy.Text = "Đăng kí tài khoản";
+            this.llbDangKy.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llbDangKy_LinkClicked);
             // 
-            // button2
+            // btnThoat
             // 
-            this.button2.Location = new System.Drawing.Point(264, 276);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(103, 37);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Thoát";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnThoat.Location = new System.Drawing.Point(264, 276);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(103, 37);
+            this.btnThoat.TabIndex = 13;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // button1
+            // btnDangNhap
             // 
-            this.button1.Location = new System.Drawing.Point(142, 276);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 37);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Đăng nhập";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnDangNhap.Location = new System.Drawing.Point(142, 276);
+            this.btnDangNhap.Name = "btnDangNhap";
+            this.btnDangNhap.Size = new System.Drawing.Size(103, 37);
+            this.btnDangNhap.TabIndex = 14;
+            this.btnDangNhap.Text = "Đăng nhập";
+            this.btnDangNhap.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // txtMatKhau
             // 
-            this.textBox2.Location = new System.Drawing.Point(176, 193);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(191, 26);
-            this.textBox2.TabIndex = 12;
+            this.txtMatKhau.Location = new System.Drawing.Point(176, 193);
+            this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.Size = new System.Drawing.Size(191, 26);
+            this.txtMatKhau.TabIndex = 12;
             // 
-            // textBox1
+            // txtTaiKhoan
             // 
-            this.textBox1.Location = new System.Drawing.Point(176, 142);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(191, 26);
-            this.textBox1.TabIndex = 11;
+            this.txtTaiKhoan.Location = new System.Drawing.Point(176, 142);
+            this.txtTaiKhoan.Name = "txtTaiKhoan";
+            this.txtTaiKhoan.Size = new System.Drawing.Size(191, 26);
+            this.txtTaiKhoan.TabIndex = 11;
             // 
             // label3
             // 
@@ -97,6 +99,7 @@
             this.lbStatus.TabIndex = 8;
             this.lbStatus.Text = "Tài khoản đã bị khóa";
             this.lbStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbStatus.Visible = false;
             // 
             // label2
             // 
@@ -124,11 +127,11 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(493, 349);
-            this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.llbDangKy);
+            this.Controls.Add(this.btnThoat);
+            this.Controls.Add(this.btnDangNhap);
+            this.Controls.Add(this.txtMatKhau);
+            this.Controls.Add(this.txtTaiKhoan);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lbStatus);
             this.Controls.Add(this.label2);
@@ -143,11 +146,11 @@
 
         #endregion
 
-        private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.LinkLabel llbDangKy;
+        private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.Button btnDangNhap;
+        private System.Windows.Forms.TextBox txtMatKhau;
+        private System.Windows.Forms.TextBox txtTaiKhoan;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lbStatus;
         private System.Windows.Forms.Label label2;
