@@ -13,7 +13,7 @@ namespace Shop_Manager.BanHang {
         public frmHoaDon() {
             InitializeComponent();
             StartPosition = FormStartPosition.CenterParent;
-            ;
+            
         }
     }
 }
