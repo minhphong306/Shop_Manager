@@ -12,8 +12,13 @@ using Shop_Manager.QuanLy;
 
 namespace Shop_Manager {
     public partial class frmGiaoDienChinh : Form {
+
+        public int VAITRO { get; set; }
         public frmGiaoDienChinh() {
             InitializeComponent();
+            StartPosition = FormStartPosition.CenterParent;
+            WindowState = FormWindowState.Maximized;
+            BackColor = Color.FromArgb(81, 189, 168);
         }
 
         private void mnNhanVien_Click(object sender, EventArgs e) {
@@ -54,6 +59,17 @@ namespace Shop_Manager {
         private void mnSanPham_Click(object sender, EventArgs e) {
             frmSanPham fSanPham = new frmSanPham();
             fSanPham.ShowDialog();
+        }
+
+        private void frmGiaoDienChinh_Load(object sender, EventArgs e) {
+            if (VAITRO == 2)
+            {
+                mnQuanLy.Enabled = false;
+            }
+        }
+
+        private void mnDangXuat_Click(object sender, EventArgs e) {
+            this.Close();
         }
     }
 }

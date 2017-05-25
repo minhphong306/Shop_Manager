@@ -60,6 +60,7 @@
             this.btnDangKy.TabIndex = 22;
             this.btnDangKy.Text = "Đăng ký";
             this.btnDangKy.UseVisualStyleBackColor = true;
+            this.btnDangKy.Click += new System.EventHandler(this.btnDangKy_Click);
             // 
             // txtPass
             // 
@@ -74,9 +75,9 @@
             this.label5.Location = new System.Drawing.Point(34, 215);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 17);
+            this.label5.Size = new System.Drawing.Size(61, 17);
             this.label5.TabIndex = 17;
-            this.label5.Text = "Mod";
+            this.label5.Text = "Bộ phận";
             // 
             // txtAcc
             // 

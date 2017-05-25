@@ -11,7 +11,7 @@ namespace Shop_Manager
     class SQLHelper
     {
         // Attribute
-        private static string chuoiCSDL = "Data Source=DESTRUCTION-VIR;Initial Catalog=banlinhkien;Persist Security Info=True;User ID=saadmin;Password=daicaphong";
+        private static string chuoiCSDL = "Data Source=DESTRUCTION-VIR;Initial Catalog=banquanao;Persist Security Info=True;User ID=saadmin;Password=daicaphong";
         private static SqlConnection doiTuongKetNoi;
 
         public static void moKetNoi()
@@ -74,3 +74,5 @@ namespace Shop_Manager
 
     }
 }
+
+// DBCC CHECKIDENT (BOPHAN, RESEED, 0)

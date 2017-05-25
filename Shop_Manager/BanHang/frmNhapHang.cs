@@ -12,6 +12,7 @@ namespace Shop_Manager.BanHang {
     public partial class frmNhapHang : Form {
         public frmNhapHang() {
             InitializeComponent();
+            StartPosition = FormStartPosition.CenterParent;
         }
     }
 }

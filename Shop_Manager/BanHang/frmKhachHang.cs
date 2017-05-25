@@ -12,6 +12,8 @@ namespace Shop_Manager.BanHang {
     public partial class frmKhachHang : Form {
         public frmKhachHang() {
             InitializeComponent();
+            StartPosition = FormStartPosition.CenterParent;
+            
         }
     }
 }
