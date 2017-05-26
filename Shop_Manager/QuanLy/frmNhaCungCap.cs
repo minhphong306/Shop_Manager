@@ -24,7 +24,6 @@ namespace Shop_Manager.QuanLy {
         private int[] size = { 30, 70 };
 
         private void btnThem_Click(object sender, EventArgs e) {
-            txtMaDM.Text = "";
             txtTenDM.Text = "";
             MODE = ADD;
             thayDoiTrangThai();
@@ -36,11 +35,11 @@ namespace Shop_Manager.QuanLy {
         }
 
         private void btnXoa_Click(object sender, EventArgs e) {
-            if (MessageBox.Show("Bạn có muốn xóa danh mục này", "Xác nhân", MessageBoxButtons.YesNo, MessageBoxIcon.Asterisk) == DialogResult.Yes) {
+            if (MessageBox.Show("Bạn có muốn xóa nhà cung cấp này", "Xác nhân", MessageBoxButtons.YesNo, MessageBoxIcon.Asterisk) == DialogResult.Yes) {
                 string maNCC = txtMaDM.Text;
                 String sql = string.Format("UPDATE NHACUNGCAP SET DAXOA = '1'  WHERE MANHACUNGCAP = '{0}'", maNCC);
                 SQLHelper.chayTruyVan(sql);
-                MessageBox.Show("Xóa thành công danh mục", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Xóa thành công nhà cung cấp", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 frmNhaCungCap_Load(null, null);
             }
         }
@@ -82,11 +81,16 @@ namespace Shop_Manager.QuanLy {
         }
 
         private void dgvDuLieu_CellClick(object sender, DataGridViewCellEventArgs e) {
-            if (e.RowIndex >= 0) {
+            int index;
+            if (e == null)
+                index = 0;
+            else
+                index = e.RowIndex;
+            if (index >= 0) {
                 MODE = WAIT;
                 thayDoiTrangThai();
 
-                DataGridViewRow dr = dgvDuLieu.Rows[e.RowIndex];
+                DataGridViewRow dr = dgvDuLieu.Rows[index];
                 txtMaDM.Text = dr.Cells[0].Value.ToString();
                 txtTenDM.Text = dr.Cells[1].Value.ToString();
 
@@ -145,6 +149,8 @@ namespace Shop_Manager.QuanLy {
                 dgvDuLieu.Columns[i].Width = (dgvDuLieu.Width / 100) * size[i];
                 dgvDuLieu.Columns[i].HeaderText = strHeader[i];
             }
+
+            dgvDuLieu_CellClick(null, null);
         }
     }
 }

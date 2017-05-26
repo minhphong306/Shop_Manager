@@ -46,8 +46,6 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.dgvDuLieu = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtGiaXuat)).BeginInit();
@@ -300,8 +298,6 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.txtTimKiem);
             this.groupBox2.Controls.Add(this.dgvDuLieu);
             this.groupBox2.Location = new System.Drawing.Point(3, 286);
             this.groupBox2.Name = "groupBox2";
@@ -310,31 +306,15 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Danh sách sản phẩm";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(9, 28);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(130, 17);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Tìm kiếm sản phẩm";
-            // 
-            // txtTimKiem
-            // 
-            this.txtTimKiem.Location = new System.Drawing.Point(156, 28);
-            this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(397, 23);
-            this.txtTimKiem.TabIndex = 5;
-            // 
             // dgvDuLieu
             // 
             this.dgvDuLieu.AllowUserToAddRows = false;
             this.dgvDuLieu.AllowUserToDeleteRows = false;
             this.dgvDuLieu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDuLieu.Location = new System.Drawing.Point(6, 62);
+            this.dgvDuLieu.Location = new System.Drawing.Point(6, 22);
             this.dgvDuLieu.Name = "dgvDuLieu";
             this.dgvDuLieu.ReadOnly = true;
-            this.dgvDuLieu.Size = new System.Drawing.Size(1079, 242);
+            this.dgvDuLieu.Size = new System.Drawing.Size(1079, 282);
             this.dgvDuLieu.TabIndex = 4;
             this.dgvDuLieu.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDuLieu_CellClick);
             // 
@@ -360,7 +340,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtGiaNhap)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbHinhAnh)).EndInit();
             this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDuLieu)).EndInit();
             this.ResumeLayout(false);
 
@@ -385,8 +364,6 @@
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.DataGridView dgvDuLieu;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cbThuongHieu;

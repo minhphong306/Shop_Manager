@@ -134,15 +134,26 @@ namespace Shop_Manager.QuanLy {
                 dgvDuLieu.Columns[i].Width = (dgvDuLieu.Width / 100) * size[i];
                 dgvDuLieu.Columns[i].HeaderText = strHeader[i];
             }
+            dgvDuLieu_CellClick(null, null);
         }
 
-        private void dgvDuLieu_CellClick(object sender, DataGridViewCellEventArgs e) {
-            if (e.RowIndex >= 0)
+        private void dgvDuLieu_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int index;
+            if (e == null)
+            {
+                index = 0;
+            }
+            else
+            {
+                index = e.RowIndex;
+            }
+            if (index >= 0)
             {
                 MODE = WAIT;
                 thayDoiTrangThai();
 
-                DataGridViewRow dr = dgvDuLieu.Rows[e.RowIndex];
+                DataGridViewRow dr = dgvDuLieu.Rows[index];
                 txtMaDM.Text = dr.Cells[0].Value.ToString();
                 txtTenDM.Text = dr.Cells[1].Value.ToString();
 

@@ -66,6 +66,7 @@
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label7 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.mniThuongHieu = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -262,7 +263,8 @@
             this.mnQuanLy.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnNhanVien,
             this.mnDanhMuc,
-            this.mnNhaCungCap});
+            this.mnNhaCungCap,
+            this.mniThuongHieu});
             this.mnQuanLy.Name = "mnQuanLy";
             this.mnQuanLy.Size = new System.Drawing.Size(65, 23);
             this.mnQuanLy.Text = "Quản lí";
@@ -429,6 +431,13 @@
             this.dataGridView2.Size = new System.Drawing.Size(481, 342);
             this.dataGridView2.TabIndex = 11;
             // 
+            // mniThuongHieu
+            // 
+            this.mniThuongHieu.Name = "mniThuongHieu";
+            this.mniThuongHieu.Size = new System.Drawing.Size(162, 24);
+            this.mniThuongHieu.Text = "Thương hiệu";
+            this.mniThuongHieu.Click += new System.EventHandler(this.mniThuongHieu_Click);
+            // 
             // frmGiaoDienChinh
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -513,5 +522,6 @@
         private System.Windows.Forms.ToolStripMenuItem hóaĐơnNhậpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hóaĐơnXuấtToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem thốngKêToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mniThuongHieu;
     }
 }

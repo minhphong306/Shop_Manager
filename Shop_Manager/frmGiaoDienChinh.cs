@@ -71,5 +71,10 @@ namespace Shop_Manager {
         private void mnDangXuat_Click(object sender, EventArgs e) {
             this.Close();
         }
+
+        private void mniThuongHieu_Click(object sender, EventArgs e) {
+            frmThuongHieu fThuongHieu = new frmThuongHieu();
+            fThuongHieu.ShowDialog();
+        }
     }
 }
