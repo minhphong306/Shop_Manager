@@ -13,7 +13,7 @@ using Shop_Manager.QuanLy;
 namespace Shop_Manager {
     public partial class frmGiaoDienChinh : Form {
 
-        public int VAITRO { get; set; }
+        
         public frmGiaoDienChinh() {
             InitializeComponent();
             StartPosition = FormStartPosition.CenterParent;
@@ -62,7 +62,7 @@ namespace Shop_Manager {
         }
 
         private void frmGiaoDienChinh_Load(object sender, EventArgs e) {
-            if (VAITRO == 2)
+            if (SQLHelper.BOPHAN == SQLHelper.NHANVIEN)
             {
                 mnQuanLy.Enabled = false;
             }

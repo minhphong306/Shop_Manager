@@ -81,6 +81,18 @@ namespace Shop_Manager.QuanLy {
             this.Close();
         }
 
+        private void dgvDuLieu_CellClick(object sender, DataGridViewCellEventArgs e) {
+            if (e.RowIndex >= 0) {
+                MODE = WAIT;
+                thayDoiTrangThai();
+
+                DataGridViewRow dr = dgvDuLieu.Rows[e.RowIndex];
+                txtMaDM.Text = dr.Cells[0].Value.ToString();
+                txtTenDM.Text = dr.Cells[1].Value.ToString();
+
+            }
+        }
+
         private void thayDoiTrangThai() {
             switch (MODE) {
                 case WAIT:

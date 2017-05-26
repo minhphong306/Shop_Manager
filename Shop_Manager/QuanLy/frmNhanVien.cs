@@ -174,11 +174,11 @@ namespace Shop_Manager.QuanLy {
         }
 
         private void btnXoa_Click(object sender, EventArgs e) {
-            if (MessageBox.Show("Bạn có muốn xóa danh mục này", "Xác nhân", MessageBoxButtons.YesNo, MessageBoxIcon.Asterisk) == DialogResult.Yes) {
+            if (MessageBox.Show("Bạn có muốn xóa nhân viên này này", "Xác nhân", MessageBoxButtons.YesNo, MessageBoxIcon.Asterisk) == DialogResult.Yes) {
                 string maDM = txtMaNV.Text;
                 String sql = string.Format("UPDATE NHANVIEN SET DAXOA = '1'  WHERE MANHANVIEN = '{0}'", maDM);
                 SQLHelper.chayTruyVan(sql);
-                MessageBox.Show("Xóa thành công danh mục", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Xóa thành công nhân viên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 frmNhanVien_Load(null, null);
             }
         }

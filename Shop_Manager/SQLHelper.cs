@@ -11,6 +11,8 @@ namespace Shop_Manager
     class SQLHelper
     {
         // Attribute
+        public static int BOPHAN = 1;
+        public static int QUANLY = 1, NHANVIEN = 2;
         private static string chuoiCSDL = "Data Source=DESTRUCTION-VIR;Initial Catalog=banquanao;Persist Security Info=True;User ID=saadmin;Password=daicaphong";
         private static SqlConnection doiTuongKetNoi;
 
