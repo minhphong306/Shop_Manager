@@ -8,11 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Shop_Manager.BanHang {
-    public partial class frmHoaDon : Form {
-        public frmHoaDon() {
+namespace Shop_Manager {
+    public partial class frmTemp : Form {
+        public frmTemp() {
             InitializeComponent();
-            StartPosition = FormStartPosition.CenterParent;
         }
     }
 }

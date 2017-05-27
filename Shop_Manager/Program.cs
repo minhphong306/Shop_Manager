@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Shop_Manager.BanHang;
 using Shop_Manager.QuanLy;
 
 namespace Shop_Manager {

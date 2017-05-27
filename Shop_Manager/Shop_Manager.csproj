@@ -76,6 +76,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmChuongTrinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChuongTrinh.Designer.cs">
+      <DependentUpon>frmChuongTrinh.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDangKy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,18 @@
     </Compile>
     <Compile Include="frmGiaoDienChinh.Designer.cs">
       <DependentUpon>frmGiaoDienChinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTemp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTemp.Designer.cs">
+      <DependentUpon>frmTemp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTemp2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTemp2.Designer.cs">
+      <DependentUpon>frmTemp2.cs</DependentUpon>
     </Compile>
     <Compile Include="frmThongTin.cs">
       <SubType>Form</SubType>
@@ -142,11 +160,20 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmChuongTrinh.resx">
+      <DependentUpon>frmChuongTrinh.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDangKy.resx">
       <DependentUpon>frmDangKy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmGiaoDienChinh.resx">
       <DependentUpon>frmGiaoDienChinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTemp.resx">
+      <DependentUpon>frmTemp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTemp2.resx">
+      <DependentUpon>frmTemp2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmThongTin.resx">
       <DependentUpon>frmThongTin.cs</DependentUpon>
@@ -200,6 +227,51 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bg-quan-ao.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backward_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enter_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmark_new_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmark_remove_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\history_clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paperbag_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backward_321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\knotes_delete_knotes_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warehouse_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\branch_4.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

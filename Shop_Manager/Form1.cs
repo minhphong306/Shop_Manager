@@ -65,9 +65,10 @@ namespace Shop_Manager {
                 lbStatus.Visible = false;
                 this.Hide();
                 int role = int.Parse(data.Rows[0]["MABOPHAN"].ToString());
-                frmGiaoDienChinh fMain = new frmGiaoDienChinh();
-                
                 SQLHelper.BOPHAN = role;
+                SQLHelper.TENNHANVIEN = data.Rows[0]["TENNHANVIEN"].ToString();
+                frmChuongTrinh fMain = new frmChuongTrinh();
+                
                 fMain.ShowDialog();
                 this.Show();
             }

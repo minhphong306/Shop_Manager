@@ -156,6 +156,15 @@ namespace Shop_Manager.QuanLy {
 
                         break;
                     case ADD:
+                        // Kiểm tra tên tài khoản, mật khẩu đã tồn tại
+                        string strSQL1 = string.Format("SELECT * FROM NHANVIEN " +
+                                                      "where TENTAIKHOAN = '{0}'", TaiKhoan);
+                        DataTable data = SQLHelper.layBangDuLieu(strSQL1);
+                        int a = data.Rows.Count;
+                        if (a > 0) {
+                            MessageBox.Show("Tài khoản đã tồn tại");
+                            return;
+                        }
                         sql =
                             string.Format(
                                 "INSERT INTO NHANVIEN (TENNHANVIEN, SODIENTHOAI, EMAIL, MABOPHAN, DIACHI, TENTAIKHOAN, MATKHAU, TRANGTHAI, NGAYSINH, GIOITINH) VALUES(N'{0}', '{1}', '{2}', '{3}', N'{4}', '{5}', '{6}', '{7}', '{8}', '{9}')",
