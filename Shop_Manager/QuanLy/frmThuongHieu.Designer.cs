@@ -50,7 +50,7 @@
             this.groupBox1.Size = new System.Drawing.Size(764, 127);
             this.groupBox1.TabIndex = 29;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Chi tiết danh mục";
+            this.groupBox1.Text = "Chi tiết thương hiệu";
             // 
             // txtTenDM
             // 
@@ -63,11 +63,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(20, 81);
+            this.label2.Location = new System.Drawing.Point(20, 77);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 20);
+            this.label2.Size = new System.Drawing.Size(124, 20);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Tên danh mục";
+            this.label2.Text = "Tên thương hiệu";
             // 
             // txtMaDM
             // 
@@ -81,11 +81,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 42);
+            this.label1.Location = new System.Drawing.Point(20, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 20);
+            this.label1.Size = new System.Drawing.Size(119, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Mã danh mục";
+            this.label1.Text = "Mã thương hiệu";
             // 
             // dgvDuLieu
             // 

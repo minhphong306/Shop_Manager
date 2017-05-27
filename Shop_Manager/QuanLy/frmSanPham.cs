@@ -139,7 +139,7 @@ namespace Shop_Manager.QuanLy {
         private void btnXoa_Click(object sender, EventArgs e) {
             if (MessageBox.Show("Bạn có muốn xóa sản phẩm này", "Xác nhân", MessageBoxButtons.YesNo, MessageBoxIcon.Asterisk) == DialogResult.Yes) {
                 string maDM = txtMaSP.Text;
-                String sql = string.Format("UPDATE SANPHAM SET DAXOA = '1'  WHERE MANHANVIEN = '{0}'", maDM);
+                String sql = string.Format("UPDATE SANPHAM SET DAXOA = '1'  WHERE MASANPHAM = '{0}'", maDM);
                 SQLHelper.chayTruyVan(sql);
                 MessageBox.Show("Xóa thành công sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 frmSanPham_Load(null, null);
@@ -202,7 +202,8 @@ namespace Shop_Manager.QuanLy {
 
         private void btnThem_Click(object sender, EventArgs e) {
             MODE = ADD;
-            thayDoiTrangThai(); 
+            thayDoiTrangThai();
+            txtMaSP.Text = "TỰ ĐỘNG";
             txtTenSP.Text = "";
             txtGiaNhap.Value = 1000;
             txtGiaXuat.Value =1000;

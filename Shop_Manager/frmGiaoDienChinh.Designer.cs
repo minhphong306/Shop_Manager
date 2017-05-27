@@ -53,6 +53,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.btnThemKhach = new System.Windows.Forms.Button();
             this.lbTongTien = new System.Windows.Forms.Label();
+            this.btnTroLai = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericSoluong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDuLieu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDon)).BeginInit();
@@ -180,9 +181,9 @@
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(58)))), ((int)(((byte)(147)))));
             this.label7.Location = new System.Drawing.Point(909, 27);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(253, 26);
+            this.label7.Size = new System.Drawing.Size(270, 26);
             this.label7.TabIndex = 19;
-            this.label7.Text = "HÓA ĐƠN BÁN HÀNG";
+            this.label7.Text = "HÓA ĐƠN NHẬP HÀNG";
             // 
             // dgvHoaDon
             // 
@@ -202,9 +203,9 @@
             this.btnHuyDonHang.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(58)))), ((int)(((byte)(147)))));
             this.btnHuyDonHang.Image = global::Shop_Manager.Properties.Resources.history_clear;
             this.btnHuyDonHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHuyDonHang.Location = new System.Drawing.Point(624, 542);
+            this.btnHuyDonHang.Location = new System.Drawing.Point(624, 521);
             this.btnHuyDonHang.Name = "btnHuyDonHang";
-            this.btnHuyDonHang.Size = new System.Drawing.Size(140, 71);
+            this.btnHuyDonHang.Size = new System.Drawing.Size(140, 52);
             this.btnHuyDonHang.TabIndex = 24;
             this.btnHuyDonHang.Text = "Hủy đơn hàng";
             this.btnHuyDonHang.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -219,7 +220,7 @@
             this.btnThanhToan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThanhToan.Location = new System.Drawing.Point(624, 449);
             this.btnThanhToan.Name = "btnThanhToan";
-            this.btnThanhToan.Size = new System.Drawing.Size(140, 72);
+            this.btnThanhToan.Size = new System.Drawing.Size(140, 57);
             this.btnThanhToan.TabIndex = 23;
             this.btnThanhToan.Text = "Thanh toán";
             this.btnThanhToan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -371,13 +372,13 @@
             // 
             this.btnThemKhach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThemKhach.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(58)))), ((int)(((byte)(147)))));
-            this.btnThemKhach.Image = global::Shop_Manager.Properties.Resources.bookmark_new_32;
+            this.btnThemKhach.Image = global::Shop_Manager.Properties.Resources.customer_32;
             this.btnThemKhach.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemKhach.Location = new System.Drawing.Point(932, 197);
+            this.btnThemKhach.Location = new System.Drawing.Point(892, 197);
             this.btnThemKhach.Name = "btnThemKhach";
-            this.btnThemKhach.Size = new System.Drawing.Size(128, 35);
+            this.btnThemKhach.Size = new System.Drawing.Size(168, 35);
             this.btnThemKhach.TabIndex = 25;
-            this.btnThemKhach.Text = "Thêm khách";
+            this.btnThemKhach.Text = "Thêm khách hàng";
             this.btnThemKhach.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThemKhach.UseVisualStyleBackColor = true;
             this.btnThemKhach.Click += new System.EventHandler(this.btnThemKhach_Click);
@@ -394,11 +395,26 @@
             this.lbTongTien.TabIndex = 15;
             this.lbTongTien.Text = "Tổng tiền";
             // 
+            // btnTroLai
+            // 
+            this.btnTroLai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(58)))), ((int)(((byte)(147)))));
+            this.btnTroLai.Image = global::Shop_Manager.Properties.Resources.backward_32;
+            this.btnTroLai.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTroLai.Location = new System.Drawing.Point(624, 592);
+            this.btnTroLai.Name = "btnTroLai";
+            this.btnTroLai.Size = new System.Drawing.Size(140, 49);
+            this.btnTroLai.TabIndex = 33;
+            this.btnTroLai.Text = "Trở lại";
+            this.btnTroLai.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnTroLai.UseVisualStyleBackColor = true;
+            this.btnTroLai.Click += new System.EventHandler(this.btnTroLai_Click);
+            // 
             // frmGiaoDienChinh
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
             this.ClientSize = new System.Drawing.Size(1341, 680);
+            this.Controls.Add(this.btnTroLai);
             this.Controls.Add(this.rtbDiaChi);
             this.Controls.Add(this.txtTenNV);
             this.Controls.Add(this.txtEmail);
@@ -472,5 +488,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button btnThemKhach;
         private System.Windows.Forms.Label lbTongTien;
+        private System.Windows.Forms.Button btnTroLai;
     }
 }

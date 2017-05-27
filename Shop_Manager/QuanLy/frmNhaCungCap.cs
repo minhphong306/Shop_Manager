@@ -52,10 +52,17 @@ namespace Shop_Manager.QuanLy {
                 string SDT = txtSDT.Text;
                 string diachi = rtbDiaChi.Text;
 
+                if (String.IsNullOrWhiteSpace(maDM))
+                {
+                    MessageBox.Show("Không được để trống tên nhà cung cấp");
+                    return;
+                }
+
+
                 string sql = "";
                 switch (MODE) {
                     case EDIT:
-                        sql = string.Format("UPDATE NHACUNGCAP SET TENNHACUNGCAP = N'{0}', EMAIL = '{1}, SODIENTHOAI = '{2}', DIACHI = N'{3}' WHERE MANHACUNGCAP = '{4}' ", TenDM, email, SDT, diachi, maDM);
+                        sql = string.Format("UPDATE NHACUNGCAP SET TENNHACUNGCAP = N'{0}', EMAIL = '{1}', SODIENTHOAI = '{2}', DIACHI = N'{3}' WHERE MANHACUNGCAP = '{4}' ", TenDM, email, SDT, diachi, maDM);
 
                         break;
                     case ADD:

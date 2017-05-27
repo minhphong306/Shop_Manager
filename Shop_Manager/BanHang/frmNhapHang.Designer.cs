@@ -35,7 +35,7 @@
             this.dateHoaDon = new System.Windows.Forms.DateTimePicker();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnGiamSanPham = new System.Windows.Forms.Button();
-            this.btnThemKhach = new System.Windows.Forms.Button();
+            this.btnThemNCC = new System.Windows.Forms.Button();
             this.btnThemSanPham = new System.Windows.Forms.Button();
             this.numericSoluong = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
@@ -53,6 +53,7 @@
             this.dgvDuLieu = new System.Windows.Forms.DataGridView();
             this.label7 = new System.Windows.Forms.Label();
             this.dgvHoaDon = new System.Windows.Forms.DataGridView();
+            this.btnTroLai = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericSoluong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDuLieu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDon)).BeginInit();
@@ -114,13 +115,14 @@
             this.btnHuyDonHang.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(58)))), ((int)(((byte)(147)))));
             this.btnHuyDonHang.Image = global::Shop_Manager.Properties.Resources.history_clear;
             this.btnHuyDonHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHuyDonHang.Location = new System.Drawing.Point(628, 535);
+            this.btnHuyDonHang.Location = new System.Drawing.Point(628, 518);
             this.btnHuyDonHang.Name = "btnHuyDonHang";
-            this.btnHuyDonHang.Size = new System.Drawing.Size(140, 71);
+            this.btnHuyDonHang.Size = new System.Drawing.Size(140, 48);
             this.btnHuyDonHang.TabIndex = 52;
             this.btnHuyDonHang.Text = "Hủy đơn hàng";
             this.btnHuyDonHang.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnHuyDonHang.UseVisualStyleBackColor = true;
+            this.btnHuyDonHang.Click += new System.EventHandler(this.btnHuyDonHang_Click);
             // 
             // btnThanhToan
             // 
@@ -130,11 +132,12 @@
             this.btnThanhToan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThanhToan.Location = new System.Drawing.Point(628, 442);
             this.btnThanhToan.Name = "btnThanhToan";
-            this.btnThanhToan.Size = new System.Drawing.Size(140, 72);
+            this.btnThanhToan.Size = new System.Drawing.Size(140, 51);
             this.btnThanhToan.TabIndex = 51;
             this.btnThanhToan.Text = "Thanh toán";
             this.btnThanhToan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThanhToan.UseVisualStyleBackColor = true;
+            this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
             // 
             // cbKhachHang
             // 
@@ -143,6 +146,7 @@
             this.cbKhachHang.Name = "cbKhachHang";
             this.cbKhachHang.Size = new System.Drawing.Size(188, 24);
             this.cbKhachHang.TabIndex = 56;
+            this.cbKhachHang.SelectedIndexChanged += new System.EventHandler(this.cbKhachHang_SelectedIndexChanged);
             // 
             // dateHoaDon
             // 
@@ -166,6 +170,7 @@
             this.btnXoa.Text = "Xóa";
             this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnGiamSanPham
             // 
@@ -180,20 +185,22 @@
             this.btnGiamSanPham.Text = "Giảm";
             this.btnGiamSanPham.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGiamSanPham.UseVisualStyleBackColor = true;
+            this.btnGiamSanPham.Click += new System.EventHandler(this.btnGiamSanPham_Click);
             // 
-            // btnThemKhach
+            // btnThemNCC
             // 
-            this.btnThemKhach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThemKhach.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(58)))), ((int)(((byte)(147)))));
-            this.btnThemKhach.Image = global::Shop_Manager.Properties.Resources.bookmark_new_32;
-            this.btnThemKhach.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemKhach.Location = new System.Drawing.Point(936, 190);
-            this.btnThemKhach.Name = "btnThemKhach";
-            this.btnThemKhach.Size = new System.Drawing.Size(128, 35);
-            this.btnThemKhach.TabIndex = 53;
-            this.btnThemKhach.Text = "Thêm khách";
-            this.btnThemKhach.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnThemKhach.UseVisualStyleBackColor = true;
+            this.btnThemNCC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThemNCC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(58)))), ((int)(((byte)(147)))));
+            this.btnThemNCC.Image = global::Shop_Manager.Properties.Resources.bookmark_new_32;
+            this.btnThemNCC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThemNCC.Location = new System.Drawing.Point(876, 190);
+            this.btnThemNCC.Name = "btnThemNCC";
+            this.btnThemNCC.Size = new System.Drawing.Size(188, 35);
+            this.btnThemNCC.TabIndex = 53;
+            this.btnThemNCC.Text = "Thêm nhà cung cấp";
+            this.btnThemNCC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnThemNCC.UseVisualStyleBackColor = true;
+            this.btnThemNCC.Click += new System.EventHandler(this.btnThemNCC_Click);
             // 
             // btnThemSanPham
             // 
@@ -208,6 +215,7 @@
             this.btnThemSanPham.Text = "Thêm";
             this.btnThemSanPham.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThemSanPham.UseVisualStyleBackColor = true;
+            this.btnThemSanPham.Click += new System.EventHandler(this.btnThemSanPham_Click);
             // 
             // numericSoluong
             // 
@@ -325,9 +333,9 @@
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(58)))), ((int)(((byte)(147)))));
             this.label8.Location = new System.Drawing.Point(772, 128);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(69, 17);
+            this.label8.Size = new System.Drawing.Size(59, 17);
             this.label8.TabIndex = 37;
-            this.label8.Text = "Mã khách";
+            this.label8.Text = "Mã NCC";
             // 
             // label3
             // 
@@ -336,9 +344,9 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(58)))), ((int)(((byte)(147)))));
             this.label3.Location = new System.Drawing.Point(772, 95);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 17);
+            this.label3.Size = new System.Drawing.Size(96, 17);
             this.label3.TabIndex = 36;
-            this.label3.Text = "Khách hàng";
+            this.label3.Text = "Nhà cung cấp";
             // 
             // label1
             // 
@@ -387,10 +395,25 @@
             this.dgvHoaDon.Size = new System.Drawing.Size(535, 294);
             this.dgvHoaDon.TabIndex = 33;
             // 
+            // btnTroLai
+            // 
+            this.btnTroLai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(58)))), ((int)(((byte)(147)))));
+            this.btnTroLai.Image = global::Shop_Manager.Properties.Resources.backward_32;
+            this.btnTroLai.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTroLai.Location = new System.Drawing.Point(628, 585);
+            this.btnTroLai.Name = "btnTroLai";
+            this.btnTroLai.Size = new System.Drawing.Size(140, 49);
+            this.btnTroLai.TabIndex = 63;
+            this.btnTroLai.Text = "Trở lại";
+            this.btnTroLai.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnTroLai.UseVisualStyleBackColor = true;
+            this.btnTroLai.Click += new System.EventHandler(this.btnTroLai_Click);
+            // 
             // frmNhapHang
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1341, 680);
+            this.Controls.Add(this.btnTroLai);
             this.Controls.Add(this.rtbDiaChi);
             this.Controls.Add(this.txtTenNV);
             this.Controls.Add(this.txtEmail);
@@ -403,7 +426,7 @@
             this.Controls.Add(this.dateHoaDon);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnGiamSanPham);
-            this.Controls.Add(this.btnThemKhach);
+            this.Controls.Add(this.btnThemNCC);
             this.Controls.Add(this.btnThemSanPham);
             this.Controls.Add(this.numericSoluong);
             this.Controls.Add(this.label2);
@@ -425,6 +448,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmNhapHang";
             this.Text = "Nhập hàng";
+            this.Load += new System.EventHandler(this.frmNhapHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericSoluong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDuLieu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDon)).EndInit();
@@ -447,7 +471,7 @@
         private System.Windows.Forms.DateTimePicker dateHoaDon;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnGiamSanPham;
-        private System.Windows.Forms.Button btnThemKhach;
+        private System.Windows.Forms.Button btnThemNCC;
         private System.Windows.Forms.Button btnThemSanPham;
         private System.Windows.Forms.NumericUpDown numericSoluong;
         private System.Windows.Forms.Label label2;
@@ -465,5 +489,6 @@
         private System.Windows.Forms.DataGridView dgvDuLieu;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView dgvHoaDon;
+        private System.Windows.Forms.Button btnTroLai;
     }
 }

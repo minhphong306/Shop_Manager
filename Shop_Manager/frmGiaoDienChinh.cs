@@ -129,52 +129,56 @@ namespace Shop_Manager {
 
         private void btnGiamSanPham_Click(object sender, EventArgs e) {
             // Kiểm tra số lượng có thỏa mãn
-            int index = dgvHoaDon.SelectedRows[0].Index;
-            if (index < 0)
-                MessageBox.Show("Vui lòng chọn sản phẩm cần giảm");
-            int soluonghoadon = int.Parse(dataHoaDon.Rows[index][2].ToString());
-            int soluongtru = (int)numericSoluong.Value;
-            if (soluongtru == 0 || soluongtru > soluonghoadon) {
-                MessageBox.Show("Số lượng không hợp lệ");
-                return;
-            }
+            try {
 
-            string mahang = dataHoaDon.Rows[index][4].ToString();
-            int index2 = -1;
-
-            // Lấy ra index cần cộng bên bảng sản phẩm
-            for (int i = 0; i < dataTable.Rows.Count; i++) {
-                if (mahang.Equals(dataTable.Rows[i]["MASANPHAM"].ToString())) {
-                    index2 = i;
-                    break;
+                int index = dgvHoaDon.SelectedRows[0].Index;
+                int soluonghoadon = int.Parse(dataHoaDon.Rows[index][2].ToString());
+                int soluongtru = (int)numericSoluong.Value;
+                if (soluongtru == 0 || soluongtru > soluonghoadon) {
+                    MessageBox.Show("Số lượng không hợp lệ");
+                    return;
                 }
+
+                string mahang = dataHoaDon.Rows[index][4].ToString();
+                int index2 = -1;
+
+                // Lấy ra index cần cộng bên bảng sản phẩm
+                for (int i = 0; i < dataTable.Rows.Count; i++) {
+                    if (mahang.Equals(dataTable.Rows[i]["MASANPHAM"].ToString())) {
+                        index2 = i;
+                        break;
+                    }
+                }
+
+                // Nếu số lượng giảm = số lượng bên bảng HD thì xóa luôn dòng đi
+                // Còn không thì trừ đi thông thường
+                if (soluongtru == soluonghoadon) {
+                    dataHoaDon.Rows.RemoveAt(index);
+                }
+                else {
+                    int soluongmoi = soluonghoadon - soluongtru;
+                    int dongia = int.Parse(dataTable.Rows[index2]["DONGIAXUAT"].ToString());
+
+                    int tongtienmoi = dongia * soluongmoi;
+
+                    dataHoaDon.Rows[index][2] = soluongmoi;
+                    dataHoaDon.Rows[index][3] = tongtienmoi;
+                }
+
+
+
+
+                // Cập nhật số lượng bên bảng sản phẩm
+                int soluongbangsanphamcu = int.Parse(dataTable.Rows[index2]["SOLUONGTON"].ToString());
+                int soluongbangsanphammoi = soluongbangsanphamcu + soluongtru;
+                dataTable.Rows[index2]["SOLUONGTON"] = soluongbangsanphammoi;
+
+                //Tinhs tổng tiên;
+                tinhTien();
             }
-
-            // Nếu số lượng giảm = số lượng bên bảng HD thì xóa luôn dòng đi
-            // Còn không thì trừ đi thông thường
-            if (soluongtru == soluonghoadon) {
-                dataHoaDon.Rows.RemoveAt(index);
+            catch (Exception) {
+                MessageBox.Show("Vui lòng chọn sản phẩm cần giảm");
             }
-            else {
-                int soluongmoi = soluonghoadon - soluongtru;
-                int dongia = int.Parse(dataTable.Rows[index2]["DONGIAXUAT"].ToString());
-
-                int tongtienmoi = dongia * soluongmoi;
-
-                dataHoaDon.Rows[index][2] = soluongmoi;
-                dataHoaDon.Rows[index][3] = tongtienmoi;
-            }
-
-
-
-
-            // Cập nhật số lượng bên bảng sản phẩm
-            int soluongbangsanphamcu = int.Parse(dataTable.Rows[index2]["SOLUONGTON"].ToString());
-            int soluongbangsanphammoi = soluongbangsanphamcu + soluongtru;
-            dataTable.Rows[index2]["SOLUONGTON"] = soluongbangsanphammoi;
-
-            //Tinhs tổng tiên;
-            tinhTien();
          
         }
 
@@ -272,6 +276,10 @@ namespace Shop_Manager {
 
             MessageBox.Show("Thanh toán thành công");
             frmGiaoDienChinh_Load(null, null);
+        }
+
+        private void btnTroLai_Click(object sender, EventArgs e) {
+            this.Close();
         }
 
         private void cbKhachHang_SelectedIndexChanged(object sender, EventArgs e) {

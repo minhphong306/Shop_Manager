@@ -27,7 +27,9 @@ namespace Shop_Manager.BanHang {
             this.Close();
         }
 
-        private void btnThem_Click(object sender, EventArgs e) {
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            txtMaNV.Text = "TỰ ĐỘNG";
             txtTenNV.Text = "";
             txtSDT.Text = "";
             txtEmail.Text = "";
