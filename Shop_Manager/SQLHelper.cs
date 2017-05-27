@@ -14,6 +14,7 @@ namespace Shop_Manager
         public static int BOPHAN = 1;
         public static int QUANLY = 1, NHANVIEN = 2;
         public static string TENNHANVIEN = "Quang Đông";
+        public static string MANHANVIEN = "3";
         private static string chuoiCSDL = "Data Source=DESTRUCTION-VIR;Initial Catalog=banquanao;Persist Security Info=True;User ID=saadmin;Password=daicaphong";
         private static SqlConnection doiTuongKetNoi;
 

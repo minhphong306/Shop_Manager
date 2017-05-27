@@ -70,6 +70,8 @@ namespace Shop_Manager {
                 frmChuongTrinh fMain = new frmChuongTrinh();
                 
                 fMain.ShowDialog();
+                txtTaiKhoan.Text = "";
+                txtMatKhau.Text = "";
                 this.Show();
             }
         }

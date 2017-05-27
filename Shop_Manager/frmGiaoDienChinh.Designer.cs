@@ -23,8 +23,7 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.rtbTongTien = new System.Windows.Forms.RichTextBox();
             this.cbKhachHang = new System.Windows.Forms.ComboBox();
             this.dateHoaDon = new System.Windows.Forms.DateTimePicker();
             this.numericSoluong = new System.Windows.Forms.NumericUpDown();
@@ -37,9 +36,9 @@
             this.dgvDuLieu = new System.Windows.Forms.DataGridView();
             this.label7 = new System.Windows.Forms.Label();
             this.dgvHoaDon = new System.Windows.Forms.DataGridView();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnHuyDonHang = new System.Windows.Forms.Button();
+            this.btnThanhToan = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
             this.btnGiamSanPham = new System.Windows.Forms.Button();
             this.btnThemSanPham = new System.Windows.Forms.Button();
             this.txtMaKhach = new System.Windows.Forms.TextBox();
@@ -53,27 +52,20 @@
             this.rtbDiaChi = new System.Windows.Forms.RichTextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.btnThemKhach = new System.Windows.Forms.Button();
+            this.lbTongTien = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericSoluong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDuLieu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDon)).BeginInit();
             this.SuspendLayout();
             // 
-            // richTextBox1
+            // rtbTongTien
             // 
-            this.richTextBox1.Enabled = false;
-            this.richTextBox1.Location = new System.Drawing.Point(1025, 592);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(219, 75);
-            this.richTextBox1.TabIndex = 29;
-            this.richTextBox1.Text = "";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(1025, 556);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(219, 23);
-            this.textBox1.TabIndex = 28;
+            this.rtbTongTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.rtbTongTien.Location = new System.Drawing.Point(1025, 592);
+            this.rtbTongTien.Name = "rtbTongTien";
+            this.rtbTongTien.Size = new System.Drawing.Size(219, 75);
+            this.rtbTongTien.TabIndex = 29;
+            this.rtbTongTien.Text = "";
             // 
             // cbKhachHang
             // 
@@ -204,47 +196,50 @@
             this.dgvHoaDon.Size = new System.Drawing.Size(535, 294);
             this.dgvHoaDon.TabIndex = 11;
             // 
-            // button5
+            // btnHuyDonHang
             // 
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(58)))), ((int)(((byte)(147)))));
-            this.button5.Image = global::Shop_Manager.Properties.Resources.history_clear;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(624, 542);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(140, 71);
-            this.button5.TabIndex = 24;
-            this.button5.Text = "Hủy đơn hàng";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnHuyDonHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHuyDonHang.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(58)))), ((int)(((byte)(147)))));
+            this.btnHuyDonHang.Image = global::Shop_Manager.Properties.Resources.history_clear;
+            this.btnHuyDonHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHuyDonHang.Location = new System.Drawing.Point(624, 542);
+            this.btnHuyDonHang.Name = "btnHuyDonHang";
+            this.btnHuyDonHang.Size = new System.Drawing.Size(140, 71);
+            this.btnHuyDonHang.TabIndex = 24;
+            this.btnHuyDonHang.Text = "Hủy đơn hàng";
+            this.btnHuyDonHang.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnHuyDonHang.UseVisualStyleBackColor = true;
+            this.btnHuyDonHang.Click += new System.EventHandler(this.btnHuyDonHang_Click);
             // 
-            // button4
+            // btnThanhToan
             // 
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(58)))), ((int)(((byte)(147)))));
-            this.button4.Image = global::Shop_Manager.Properties.Resources.paperbag_32;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(624, 449);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(140, 72);
-            this.button4.TabIndex = 23;
-            this.button4.Text = "Thanh toán";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnThanhToan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThanhToan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(58)))), ((int)(((byte)(147)))));
+            this.btnThanhToan.Image = global::Shop_Manager.Properties.Resources.paperbag_32;
+            this.btnThanhToan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThanhToan.Location = new System.Drawing.Point(624, 449);
+            this.btnThanhToan.Name = "btnThanhToan";
+            this.btnThanhToan.Size = new System.Drawing.Size(140, 72);
+            this.btnThanhToan.TabIndex = 23;
+            this.btnThanhToan.Text = "Thanh toán";
+            this.btnThanhToan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnThanhToan.UseVisualStyleBackColor = true;
+            this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
             // 
-            // button3
+            // btnXoa
             // 
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(58)))), ((int)(((byte)(147)))));
-            this.button3.Image = global::Shop_Manager.Properties.Resources.knotes_delete_knotes_32;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(624, 381);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(140, 51);
-            this.button3.TabIndex = 22;
-            this.button3.Text = "Xóa";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(58)))), ((int)(((byte)(147)))));
+            this.btnXoa.Image = global::Shop_Manager.Properties.Resources.knotes_delete_knotes_32;
+            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXoa.Location = new System.Drawing.Point(624, 381);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(140, 51);
+            this.btnXoa.TabIndex = 22;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnGiamSanPham
             // 
@@ -387,6 +382,18 @@
             this.btnThemKhach.UseVisualStyleBackColor = true;
             this.btnThemKhach.Click += new System.EventHandler(this.btnThemKhach_Click);
             // 
+            // lbTongTien
+            // 
+            this.lbTongTien.AutoSize = true;
+            this.lbTongTien.BackColor = System.Drawing.Color.Transparent;
+            this.lbTongTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbTongTien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(58)))), ((int)(((byte)(147)))));
+            this.lbTongTien.Location = new System.Drawing.Point(1022, 556);
+            this.lbTongTien.Name = "lbTongTien";
+            this.lbTongTien.Size = new System.Drawing.Size(99, 24);
+            this.lbTongTien.TabIndex = 15;
+            this.lbTongTien.Text = "Tổng tiền";
+            // 
             // frmGiaoDienChinh
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -397,13 +404,12 @@
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtSoDT);
             this.Controls.Add(this.txtMaKhach);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.rtbTongTien);
+            this.Controls.Add(this.btnHuyDonHang);
+            this.Controls.Add(this.btnThanhToan);
             this.Controls.Add(this.cbKhachHang);
             this.Controls.Add(this.dateHoaDon);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnGiamSanPham);
             this.Controls.Add(this.btnThemKhach);
             this.Controls.Add(this.btnThemSanPham);
@@ -414,6 +420,7 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label9);
+            this.Controls.Add(this.lbTongTien);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label8);
@@ -435,13 +442,12 @@
         }
 
         #endregion
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.RichTextBox rtbTongTien;
+        private System.Windows.Forms.Button btnHuyDonHang;
+        private System.Windows.Forms.Button btnThanhToan;
         private System.Windows.Forms.ComboBox cbKhachHang;
         private System.Windows.Forms.DateTimePicker dateHoaDon;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnGiamSanPham;
         private System.Windows.Forms.Button btnThemSanPham;
         private System.Windows.Forms.NumericUpDown numericSoluong;
@@ -465,5 +471,6 @@
         private System.Windows.Forms.RichTextBox rtbDiaChi;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button btnThemKhach;
+        private System.Windows.Forms.Label lbTongTien;
     }
 }

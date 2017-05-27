@@ -78,7 +78,7 @@
             this.cbNam.Location = new System.Drawing.Point(13, 3);
             this.cbNam.Name = "cbNam";
             this.cbNam.Size = new System.Drawing.Size(55, 21);
-            this.cbNam.TabIndex = 11;
+            this.cbNam.TabIndex = 0;
             this.cbNam.TabStop = true;
             this.cbNam.Text = "Nam";
             this.cbNam.UseVisualStyleBackColor = true;
@@ -89,7 +89,7 @@
             this.cbNu.Location = new System.Drawing.Point(13, 30);
             this.cbNu.Name = "cbNu";
             this.cbNu.Size = new System.Drawing.Size(44, 21);
-            this.cbNu.TabIndex = 12;
+            this.cbNu.TabIndex = 1;
             this.cbNu.Text = "Nữ";
             this.cbNu.UseVisualStyleBackColor = true;
             // 
@@ -100,14 +100,14 @@
             this.dateNgaySinh.Location = new System.Drawing.Point(106, 200);
             this.dateNgaySinh.Name = "dateNgaySinh";
             this.dateNgaySinh.Size = new System.Drawing.Size(160, 23);
-            this.dateNgaySinh.TabIndex = 42;
+            this.dateNgaySinh.TabIndex = 4;
             // 
             // rtbDiaChi
             // 
             this.rtbDiaChi.Location = new System.Drawing.Point(361, 137);
             this.rtbDiaChi.Name = "rtbDiaChi";
             this.rtbDiaChi.Size = new System.Drawing.Size(195, 86);
-            this.rtbDiaChi.TabIndex = 39;
+            this.rtbDiaChi.TabIndex = 7;
             this.rtbDiaChi.Text = "";
             // 
             // txtSDT
@@ -115,7 +115,7 @@
             this.txtSDT.Location = new System.Drawing.Point(361, 75);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(195, 23);
-            this.txtSDT.TabIndex = 36;
+            this.txtSDT.TabIndex = 5;
             // 
             // label6
             // 
@@ -152,14 +152,14 @@
             this.txtTenNV.Location = new System.Drawing.Point(106, 170);
             this.txtTenNV.Name = "txtTenNV";
             this.txtTenNV.Size = new System.Drawing.Size(160, 23);
-            this.txtTenNV.TabIndex = 35;
+            this.txtTenNV.TabIndex = 3;
             // 
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(361, 104);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(195, 23);
-            this.txtEmail.TabIndex = 37;
+            this.txtEmail.TabIndex = 6;
             // 
             // label8
             // 
@@ -187,7 +187,7 @@
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.PasswordChar = '*';
             this.txtMatKhau.Size = new System.Drawing.Size(160, 23);
-            this.txtMatKhau.TabIndex = 41;
+            this.txtMatKhau.TabIndex = 1;
             // 
             // label10
             // 
@@ -204,7 +204,7 @@
             this.txtTaiKhoan.Location = new System.Drawing.Point(106, 75);
             this.txtTaiKhoan.Name = "txtTaiKhoan";
             this.txtTaiKhoan.Size = new System.Drawing.Size(160, 23);
-            this.txtTaiKhoan.TabIndex = 40;
+            this.txtTaiKhoan.TabIndex = 0;
             // 
             // label13
             // 
@@ -242,7 +242,7 @@
             this.txtRePass.Name = "txtRePass";
             this.txtRePass.PasswordChar = '*';
             this.txtRePass.Size = new System.Drawing.Size(160, 23);
-            this.txtRePass.TabIndex = 41;
+            this.txtRePass.TabIndex = 2;
             // 
             // btnTroLai
             // 
@@ -252,7 +252,7 @@
             this.btnTroLai.Location = new System.Drawing.Point(320, 323);
             this.btnTroLai.Name = "btnTroLai";
             this.btnTroLai.Size = new System.Drawing.Size(97, 46);
-            this.btnTroLai.TabIndex = 21;
+            this.btnTroLai.TabIndex = 9;
             this.btnTroLai.Text = "Trở lại";
             this.btnTroLai.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTroLai.UseVisualStyleBackColor = true;
@@ -266,7 +266,7 @@
             this.btnDangKy.Location = new System.Drawing.Point(195, 323);
             this.btnDangKy.Name = "btnDangKy";
             this.btnDangKy.Size = new System.Drawing.Size(107, 46);
-            this.btnDangKy.TabIndex = 22;
+            this.btnDangKy.TabIndex = 8;
             this.btnDangKy.Text = "Đăng ký";
             this.btnDangKy.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDangKy.UseVisualStyleBackColor = true;

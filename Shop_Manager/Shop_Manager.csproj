@@ -70,6 +70,7 @@
     <Compile Include="BanHang\frmNhapHang.Designer.cs">
       <DependentUpon>frmNhapHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="DoiTienSangChu.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -272,6 +273,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\branch_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sale_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\import_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\staff_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar_chart_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice_48_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accept_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_321.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

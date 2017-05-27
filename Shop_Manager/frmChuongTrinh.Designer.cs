@@ -25,47 +25,47 @@
         private void InitializeComponent() {
             this.label1 = new System.Windows.Forms.Label();
             this.groupQuanLy = new System.Windows.Forms.GroupBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.llbSanPham = new System.Windows.Forms.LinkLabel();
             this.llbThuongHieu = new System.Windows.Forms.LinkLabel();
             this.llbNhaCungCap = new System.Windows.Forms.LinkLabel();
             this.llbNhanVien = new System.Windows.Forms.LinkLabel();
             this.llbDanhMuc = new System.Windows.Forms.LinkLabel();
             this.groupBanHang = new System.Windows.Forms.GroupBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.llbKhachHang = new System.Windows.Forms.LinkLabel();
             this.llbBanHang = new System.Windows.Forms.LinkLabel();
             this.llbNhapHang = new System.Windows.Forms.LinkLabel();
             this.groupThongKe = new System.Windows.Forms.GroupBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.llbBaoCaoDoanhThu = new System.Windows.Forms.LinkLabel();
             this.llbHoaDonBan = new System.Windows.Forms.LinkLabel();
             this.llbHoaDonNhap = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
             this.lbDangXuat = new System.Windows.Forms.LinkLabel();
             this.lbName = new System.Windows.Forms.Label();
-            this.llbSanPham = new System.Windows.Forms.LinkLabel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupQuanLy.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBanHang.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.groupThongKe.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -73,7 +73,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.Location = new System.Drawing.Point(0, 41);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1082, 39);
+            this.label1.Size = new System.Drawing.Size(1082, 57);
             this.label1.TabIndex = 1;
             this.label1.Text = "Hệ thống quản lý bán quần áo";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -91,48 +91,24 @@
             this.groupQuanLy.Controls.Add(this.llbNhaCungCap);
             this.groupQuanLy.Controls.Add(this.llbNhanVien);
             this.groupQuanLy.Controls.Add(this.llbDanhMuc);
-            this.groupQuanLy.Location = new System.Drawing.Point(149, 183);
+            this.groupQuanLy.Location = new System.Drawing.Point(380, 183);
             this.groupQuanLy.Name = "groupQuanLy";
             this.groupQuanLy.Size = new System.Drawing.Size(240, 286);
             this.groupQuanLy.TabIndex = 0;
             this.groupQuanLy.TabStop = false;
             this.groupQuanLy.Text = "Quản lý";
             // 
-            // pictureBox4
+            // llbSanPham
             // 
-            this.pictureBox4.Image = global::Shop_Manager.Properties.Resources.warehouse_36;
-            this.pictureBox4.Location = new System.Drawing.Point(30, 179);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Shop_Manager.Properties.Resources.branch_4;
-            this.pictureBox3.Location = new System.Drawing.Point(30, 132);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Shop_Manager.Properties.Resources.user_32;
-            this.pictureBox2.Location = new System.Drawing.Point(30, 85);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Shop_Manager.Properties.Resources.folder_new;
-            this.pictureBox1.Location = new System.Drawing.Point(30, 38);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.llbSanPham.AutoSize = true;
+            this.llbSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.llbSanPham.Location = new System.Drawing.Point(71, 237);
+            this.llbSanPham.Name = "llbSanPham";
+            this.llbSanPham.Size = new System.Drawing.Size(121, 29);
+            this.llbSanPham.TabIndex = 0;
+            this.llbSanPham.TabStop = true;
+            this.llbSanPham.Text = "Sản phẩm";
+            this.llbSanPham.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llbSanPham_LinkClicked);
             // 
             // llbThuongHieu
             // 
@@ -191,39 +167,12 @@
             this.groupBanHang.Controls.Add(this.llbKhachHang);
             this.groupBanHang.Controls.Add(this.llbBanHang);
             this.groupBanHang.Controls.Add(this.llbNhapHang);
-            this.groupBanHang.Location = new System.Drawing.Point(415, 183);
+            this.groupBanHang.Location = new System.Drawing.Point(84, 183);
             this.groupBanHang.Name = "groupBanHang";
             this.groupBanHang.Size = new System.Drawing.Size(240, 286);
             this.groupBanHang.TabIndex = 0;
             this.groupBanHang.TabStop = false;
             this.groupBanHang.Text = "Bán hàng";
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::Shop_Manager.Properties.Resources.user_32;
-            this.pictureBox7.Location = new System.Drawing.Point(30, 132);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox7.TabIndex = 3;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::Shop_Manager.Properties.Resources.folder_new;
-            this.pictureBox5.Location = new System.Drawing.Point(30, 32);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox5.TabIndex = 3;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::Shop_Manager.Properties.Resources.folder_new;
-            this.pictureBox8.Location = new System.Drawing.Point(30, 79);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox8.TabIndex = 3;
-            this.pictureBox8.TabStop = false;
             // 
             // llbKhachHang
             // 
@@ -270,39 +219,12 @@
             this.groupThongKe.Controls.Add(this.llbBaoCaoDoanhThu);
             this.groupThongKe.Controls.Add(this.llbHoaDonBan);
             this.groupThongKe.Controls.Add(this.llbHoaDonNhap);
-            this.groupThongKe.Location = new System.Drawing.Point(671, 183);
+            this.groupThongKe.Location = new System.Drawing.Point(666, 183);
             this.groupThongKe.Name = "groupThongKe";
             this.groupThongKe.Size = new System.Drawing.Size(293, 286);
             this.groupThongKe.TabIndex = 0;
             this.groupThongKe.TabStop = false;
             this.groupThongKe.Text = "Thống kê";
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::Shop_Manager.Properties.Resources.user_32;
-            this.pictureBox6.Location = new System.Drawing.Point(30, 132);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox6.TabIndex = 3;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::Shop_Manager.Properties.Resources.folder_new;
-            this.pictureBox9.Location = new System.Drawing.Point(30, 32);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox9.TabIndex = 3;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::Shop_Manager.Properties.Resources.folder_new;
-            this.pictureBox10.Location = new System.Drawing.Point(30, 79);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox10.TabIndex = 3;
-            this.pictureBox10.TabStop = false;
             // 
             // llbBaoCaoDoanhThu
             // 
@@ -351,7 +273,7 @@
             // lbDangXuat
             // 
             this.lbDangXuat.AutoSize = true;
-            this.lbDangXuat.Location = new System.Drawing.Point(638, 128);
+            this.lbDangXuat.Location = new System.Drawing.Point(636, 121);
             this.lbDangXuat.Name = "lbDangXuat";
             this.lbDangXuat.Size = new System.Drawing.Size(92, 20);
             this.lbDangXuat.TabIndex = 3;
@@ -363,32 +285,116 @@
             // 
             this.lbName.AutoSize = true;
             this.lbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbName.Location = new System.Drawing.Point(620, 101);
+            this.lbName.Location = new System.Drawing.Point(618, 99);
             this.lbName.Name = "lbName";
             this.lbName.Size = new System.Drawing.Size(110, 20);
             this.lbName.TabIndex = 2;
             this.lbName.Text = "Quang Đông";
             // 
-            // llbSanPham
+            // pictureBox6
             // 
-            this.llbSanPham.AutoSize = true;
-            this.llbSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.llbSanPham.Location = new System.Drawing.Point(71, 237);
-            this.llbSanPham.Name = "llbSanPham";
-            this.llbSanPham.Size = new System.Drawing.Size(121, 29);
-            this.llbSanPham.TabIndex = 0;
-            this.llbSanPham.TabStop = true;
-            this.llbSanPham.Text = "Sản phẩm";
-            this.llbSanPham.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llbSanPham_LinkClicked);
+            this.pictureBox6.Image = global::Shop_Manager.Properties.Resources.bar_chart_48;
+            this.pictureBox6.Location = new System.Drawing.Point(30, 132);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 3;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::Shop_Manager.Properties.Resources.invoice_48;
+            this.pictureBox9.Location = new System.Drawing.Point(30, 32);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 3;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::Shop_Manager.Properties.Resources.invoice_48_2;
+            this.pictureBox10.Location = new System.Drawing.Point(30, 79);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 3;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::Shop_Manager.Properties.Resources.customer_32;
+            this.pictureBox7.Location = new System.Drawing.Point(30, 132);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox7.TabIndex = 3;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Shop_Manager.Properties.Resources.sale_48;
+            this.pictureBox5.Location = new System.Drawing.Point(30, 32);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 3;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::Shop_Manager.Properties.Resources.import_32;
+            this.pictureBox8.Location = new System.Drawing.Point(30, 79);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox8.TabIndex = 3;
+            this.pictureBox8.TabStop = false;
             // 
             // pictureBox11
             // 
-            this.pictureBox11.Image = global::Shop_Manager.Properties.Resources.user_32;
+            this.pictureBox11.Image = global::Shop_Manager.Properties.Resources.product_48;
             this.pictureBox11.Location = new System.Drawing.Point(30, 231);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox11.TabIndex = 3;
             this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Shop_Manager.Properties.Resources.warehouse_36;
+            this.pictureBox4.Location = new System.Drawing.Point(30, 179);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox4.TabIndex = 3;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Shop_Manager.Properties.Resources.branch_4;
+            this.pictureBox3.Location = new System.Drawing.Point(30, 132);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Shop_Manager.Properties.Resources.staff_48;
+            this.pictureBox2.Location = new System.Drawing.Point(30, 85);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Shop_Manager.Properties.Resources.folder_new;
+            this.pictureBox1.Location = new System.Drawing.Point(30, 38);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // frmChuongTrinh
             // 
@@ -408,21 +414,21 @@
             this.Load += new System.EventHandler(this.frmChuongTrinh_Load);
             this.groupQuanLy.ResumeLayout(false);
             this.groupQuanLy.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBanHang.ResumeLayout(false);
             this.groupBanHang.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.groupThongKe.ResumeLayout(false);
             this.groupThongKe.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
