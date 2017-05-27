@@ -20,8 +20,8 @@ namespace Shop_Manager.QuanLy {
         private DataTable dataTable;
         private int MODE;
         private const int EDIT = 1, ADD = 2, WAIT = 3;
-        private string[] strHeader = { "Mã nhà cung cấp", "Tên nhà cung cấp" };
-        private int[] size = { 30, 70 };
+        private string[] strHeader = { "Mã nhà cung cấp", "Tên nhà cung cấp", "Email", "SDT", "Địa chỉ" };
+        private int[] size = { 10, 40, 20, 20, 40 };
 
         private void btnThem_Click(object sender, EventArgs e) {
             txtTenDM.Text = "";
@@ -48,18 +48,21 @@ namespace Shop_Manager.QuanLy {
             try {
                 String maDM = txtMaDM.Text;
                 string TenDM = txtTenDM.Text;
+                string email = txtEmail.Text;
+                string SDT = txtSDT.Text;
+                string diachi = rtbDiaChi.Text;
 
                 string sql = "";
                 switch (MODE) {
                     case EDIT:
-                        sql = string.Format("UPDATE NHACUNGCAP SET TENNHACUNGCAP = N'{0}' WHERE MANHACUNGCAP = '{1}' ", TenDM, maDM);
+                        sql = string.Format("UPDATE NHACUNGCAP SET TENNHACUNGCAP = N'{0}', EMAIL = '{1}, SODIENTHOAI = '{2}', DIACHI = N'{3}' WHERE MANHACUNGCAP = '{4}' ", TenDM, email, SDT, diachi, maDM);
 
                         break;
                     case ADD:
                         sql =
                             string.Format(
-                                "INSERT INTO NHACUNGCAP (TENNHACUNGCAP, DAXOA) VALUES(N'{0}', '0')",
-                                TenDM);
+                                "INSERT INTO NHACUNGCAP (TENNHACUNGCAP, EMAIL, SODIENTHOAI, DIACHI, DAXOA) VALUES(N'{0}', '{1}', '{2}', '{3}', '0')",
+                                TenDM, email, SDT, diachi);
                         break;
                 }
                 SQLHelper.chayTruyVan(sql);
@@ -93,7 +96,9 @@ namespace Shop_Manager.QuanLy {
                 DataGridViewRow dr = dgvDuLieu.Rows[index];
                 txtMaDM.Text = dr.Cells[0].Value.ToString();
                 txtTenDM.Text = dr.Cells[1].Value.ToString();
-
+                txtEmail.Text = dr.Cells[2].Value.ToString();
+                txtSDT.Text = dr.Cells[3].Value.ToString();
+                rtbDiaChi.Text = dr.Cells[4].Value.ToString();
             }
         }
 
@@ -101,6 +106,9 @@ namespace Shop_Manager.QuanLy {
             switch (MODE) {
                 case WAIT:
                     txtTenDM.Enabled = false;
+                    txtEmail.Enabled = false;
+                    txtSDT.Enabled = false;
+                    rtbDiaChi.Enabled = false;
 
                     btnThem.Enabled = true;
                     btnSua.Enabled = true;
@@ -111,6 +119,9 @@ namespace Shop_Manager.QuanLy {
                     break;
                 case EDIT:
                     txtTenDM.Enabled = true;
+                    txtEmail.Enabled = true;
+                    txtSDT.Enabled = true;
+                    rtbDiaChi.Enabled = true;
 
                     btnThem.Enabled = false;
                     btnSua.Enabled = false;
@@ -121,6 +132,9 @@ namespace Shop_Manager.QuanLy {
                     break;
                 case ADD:
                     txtTenDM.Enabled = true;
+                    txtEmail.Enabled = true;
+                    txtSDT.Enabled = true;
+                    rtbDiaChi.Enabled = true;
 
                     btnThem.Enabled = false;
                     btnSua.Enabled = false;
@@ -138,7 +152,7 @@ namespace Shop_Manager.QuanLy {
             thayDoiTrangThai();
 
             // Lấy dữ liệu từ CSDL
-            string strSQL = "SELECT MANHACUNGCAP, TENNHACUNGCAP FROM NHACUNGCAP WHERE DAXOA = 0";
+            string strSQL = "SELECT MANHACUNGCAP, TENNHACUNGCAP, EMAIL, SODIENTHOAI, DIACHI FROM NHACUNGCAP WHERE DAXOA = 0";
             dataTable = SQLHelper.layBangDuLieu(strSQL);
 
             // Gán dl bảng vào binding, binding gán vào dgv
